@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A83636" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#641010">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#641010"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/Button_BackTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E9EFBE0E"
+                    android:text="Retour" />
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:padding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="20dp"
+                        android:textAlignment="textStart"
+                        android:text="INFORMATIONS GENERALES"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_weight="1"
+                        android:text="Titre:"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/EditText_Manif_Titre"
+                        android:layout_width="271dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:ems="13"
+                        android:inputType="text"
+                        android:textSize="16sp" />
+                  </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+
+                        android:layout_weight="1"
+                        android:text="Description:"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:id="@+id/EditText_Manif_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="20dp"
+
+                        android:layout_marginVertical="5dp"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:text="INFORMATIONS COMPLEMENTAIRES"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:text="Rendez-vous:"
+                            android:textAlignment="textEnd"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/EditText_Manif_Meeting"
+                            android:layout_width="217dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="5dp"
+                            android:ems="10"
+
+                            android:inputType="text"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:text="Ville:"
+                            android:textAlignment="textEnd"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/EditText_Manif_Ville"
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:ems="10"
+                            android:textSize="14sp"
+                            android:textAlignment="textStart"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="66dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:text="Debut:"
+                            android:textAlignment="textEnd"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/EditText_Manif_DateDebut"
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginVertical="5dp"
+                            android:ems="10"
+                            android:hint="aaaa-mm-jj"
+                            android:inputType="date"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:text="Fin:"
+                            android:textAlignment="textEnd"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/EditText_Manif_DateFin"
+                            android:layout_width="86dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:ems="10"
+                            android:hint="aaaa-mm-jj"
+                            android:textAlignment="textEnd"
+                            android:inputType="date"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="66dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:text="Heure:"
+                            android:textAlignment="textEnd"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/EditText_Manif_HeureDebut"
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginVertical="5dp"
+                            android:ems="10"
+                            android:hint="00:00"
+                            android:textAlignment="textStart"
+                            android:textSize="14sp"
+                            android:inputType="time"/>
+
+                        <TextView
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:text="jusqu'a"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/EditText_Manif_HeureFin"
+                            android:layout_width="86dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:ems="10"
+                            android:hint="00:00"
+                            android:textAlignment="textStart"
+                            android:inputType="time"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:id="@+id/TextView_Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:text="SLOGAN"
+                            android:textAlignment="textStart"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:text="Titre:"
+                            android:textAlignment="textStart"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/EditText_Slogan_Titre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+
+                        android:ems="13"
+                        android:inputType="text"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_weight="1"
+                        android:text="Description:"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:id="@+id/EditText_Slogan_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="5dp"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+                <include layout="@layout/layout_interets" />
+
+      
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/Button_BackBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="#E9EFBE0E"
+                    android:text="Retour" />
+
+                <Button
+                    android:id="@+id/Button_Enregistrer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#E9EFBE0E"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Enregistrer" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

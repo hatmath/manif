@@ -1,0 +1,46 @@
+Quick snippet to bypass SSL certificate altogether: 
+
+import okhttp3.OkHttpClient;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.X509TrustManager;
+
+public class UnsafeOkHttpClient {
+
+    public static OkHttpClient getUnsafeOkHttpClient() {
+        try {
+            // Create a trust manager that does not validate certificate chains
+            final X509TrustManager trustManager = new X509TrustManager() {
+                @Override
+                public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) {
+                }
+
+                @Override
+                public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) {
+                }
+
+                @Override
+                public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+                    return new java.security.cert.X509Certificate[]{};
+                }
+            };
+
+            // Install the trust manager into an SSLContext
+            final SSLContext sslContext = SSLContext.getInstance("SSL");
+            sslContext.init(null, new X509TrustManager[]{trustManager}, null);
+
+            // Create an SSLSocketFactory with the SSLContext
+            final SSLSocketFactory sslSocketFactory = sslContext.getSocketFactory();
+
+            // Create an OkHttpClient that trusts all certificates
+            return new OkHttpClient.Builder()
+                    .sslSocketFactory(sslSocketFactory, trustManager)
+                    .hostnameVerifier((hostname, session) -> true)
+                    .build();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+}

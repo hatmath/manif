@@ -1,0 +1,43 @@
+plugins {   id 'com.android.application'    }
+
+android {
+    namespace "com.projet_integrateur"
+    compileSdkVersion rootProject.ext.compileSdk
+
+
+    defaultConfig {
+        applicationId "com.projet_integrateur.manif"
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion  rootProject.ext.targetSdk
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_16
+        targetCompatibility JavaVersion.VERSION_16
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01'
+    implementation 'androidx.test:runner:1.5.2'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

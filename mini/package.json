@@ -1,0 +1,22 @@
+{
+  "name": "miniapp",
+  "version": "1.0.0",
+  "description": "lifeboat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "bootstrap": "^5.3.2",
+    "html-loader": "^5.0.0",
+    "https": "^1.0.0",
+    "node-fetch": "^3.3.2",
+    "sql.js": "^1.10.2",
+    "sqlite3": "^5.1.7",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

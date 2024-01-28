@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#641010">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                android:padding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/TextView_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="10dp"
+                        android:text="[TITLE]"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+
+                    <TextView
+                        android:id="@+id/TextView_Title_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Description"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/TextView_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:ems="9"
+                        android:gravity="start|top"
+                        android:hint="[DESCRIPTION]" />
+
+                    <TextView
+                        android:id="@+id/TextView_Title_Details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Details"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/TextView_City_label"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="40dp"
+                       android:layout_marginBottom="10dp"
+                       android:ems="6"
+                       android:inputType="text"
+                       android:textAlignment="textStart"
+                       android:text="Ville : " />
+
+
+                   <TextView
+                       android:id="@+id/TextView_City"
+                       android:layout_width="125dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="40dp"
+                       android:layout_marginBottom="10dp"
+                       android:ems="7"
+                       android:inputType="text"
+                       android:text="[CITY]" />
+
+               </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextView_Meeting_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:ems="6"
+                            android:inputType="text"
+                            android:textAlignment="textStart"
+                            android:text="Rendez-vous : " />
+
+
+                        <TextView
+                            android:id="@+id/TextView_Meeting"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:ems="7"
+                            android:inputType="text"
+                            android:text="[MEETING]" />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextView_Start_date_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:ems="6"
+                            android:inputType="text"
+
+                            android:text="Date de debut : " />
+
+
+                        <TextView
+                            android:id="@+id/TextView_Start_date"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:ems="7"
+                            android:inputType="date"
+                            android:text="[START_DATE]" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextView_Start_date_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:ems="6"
+                            android:inputType="text"
+                            android:text="Date de fin : " />
+
+
+                        <TextView
+                            android:id="@+id/TextView_End_Date"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:ems="7"
+                            android:inputType="date"
+                            android:text="[END_DATE]"
+                            android:textAlignment="textStart" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TextView_Interet_Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        android:text="Interets sociaux"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/TextView_Interet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="[INTREST.NAME]"
+                        android:textAlignment="textStart" />
+
+
+                    <TextView
+                        android:id="@+id/textView_slogan_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:text="Slogans"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+
+                    <TextView
+                        android:id="@+id/TextView_Slogan_Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="[SLOGAN.TITLE]"
+                        android:textAlignment="textStart" />
+                    <TextView
+                        android:id="@+id/TextView_Slogan_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:ems="9"
+                        android:gravity="start|top"
+                        android:hint="[SLOGAN.SLOGAN]" />
+
+                    <TextView
+                        android:id="@+id/TextView_Membres_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+                        android:text="Membres"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerView_Members"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+
+                        android:textAlignment="textStart" />
+
+                    <Button
+                        android:id="@+id/Button_Suivre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:backgroundTint="#E9EFBE0E"
+                        android:text="Suivre cette manifestation" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,37 @@
+# Global
+.prettierrc
+SQLite/
+
+# Frontend
+# Compiled Object files
+.DS_Store
+.history/
+.gradle/
+.vscode/
+.idea/
+
+build/
+backup/
+docs/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Database
+# Ignore database environment files and node_modules
+database/env
+database/node_modules
+
+# Backend
+# Ignore backend environment files and node_modules
+backend/env
+backend/node_modules
+
+# Ignore certificate files
+backend/certificate/ca-cert.pem
+backend/certificate/ca-key.pem
+backend/certificate/ca.crt
+backend/certificate/ca.key
+
+# miniApp
+mini\node_modules

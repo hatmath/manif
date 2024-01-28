@@ -1,0 +1,125 @@
+# List of test URL to test backend endpoints : 
+
+# GET all manif
+http://localhost:5283/api/data/getAllManif
+
+# GET latest manif
+http://localhost:5283/api/data/getNewestManif?dateCreated=2024-01-12T10:00:00.000Z
+
+# GET all slogan
+http://localhost:5283/api/data/getAllSlogan
+
+# GET latest slogan
+http://localhost:5283/api/data/getNewestSlogan?dateCreated=2022-01-15T22:00:00.000Z
+
+# GET all interest
+http://localhost:5283/api/data/getAllInterest
+
+# GET latest interest
+http://localhost:5283/api/data/getNewestInterest?dateCreated=2024-01-22T10:00:00.000Z
+
+# GET member
+http://localhost:5283/api/data/getMember?clientId=0c8c67fb-6206-4654-b10f-7ed26189ffe5
+
+# POST create manif
+http://localhost:5283/api/data/createManif
+
+    request body:
+    {       
+        "owner": "0c8c67fb-6206-4654-b10f-7ed26189ffe5",
+        "name": "Test Manifestation",
+        "description": "This is another test manifestation.",
+        "slogan": "faff4db3-21a1-4ee4-8464-89f389265d7b",
+        "city": "Test2 City",
+        "meeting": "Test2 Meeting",
+        "interest": "6",
+        "start_date": "2023-01-30T12:00:00.000Z",
+        "end_date": "2023-01-30T16:00:00.000Z"
+    }
+
+# POST create interest
+http://localhost:5283/api/data/createInterest
+
+    request body:
+    {
+        "name": "Test Interest",
+        "description": "This is a test interest."
+    }
+
+# POST create slogan
+http://localhost:5283/api/data/createSlogan
+
+    request body:
+    {
+        "title": "Test Slogan",
+        "slogan": "This is a test slogan.",
+        "interest": "1"
+    }
+
+# POST create new member by manif
+http://localhost:5283/api/data/createMemberManif
+
+    request body:
+    {
+        "manif": "8658e41d-106d-4d78-9ce5-2a2b97f7f0a8",
+        "member": "602843e1-ceb5-4cb3-a960-95d0af960d81"
+    }
+
+# POST login user
+http://localhost:5283/api/auth/login
+
+    request body:
+    {
+        "username": "alice_smith",
+        "password": "another_hashed_password"
+    }
+
+# POST create member
+http://localhost:5283/api/auth/register
+
+    request body:
+    {
+        "username": "alice_smith",
+        "password": "another_hashed_password",
+        "mail": "alice.smith@example.com",
+        "description": "Another member of the community",
+        "avatar": 2,
+        "phone": "9876543210"
+    }
+
+# PATCH update manif
+note: All fields optional but minimally one.
+http://localhost:5283/api/data/updateManif
+
+    request body :
+    {
+        "clientId": "0c8c67fb-6206-4654-b10f-7ed26189ffe5",
+        "manifId": "4c1e51a3-178e-442a-9d20-9ee13d9e62d1",
+        "updatedData": 
+        {
+            "name": "update Manifestation",
+            "description": "This is another update testmanifn.",
+            "slogan": "faff4db3-21a1-4ee4-8464-89f389265d7b",
+            "city": "oppdate City",
+            "meeting": "Test2update"
+        }
+    }
+
+# PATCH update member by manif rating
+http://localhost:5283/api/data/updateRating
+
+    request body: 
+    {
+        "clientId": "30233107-7181-4d93-a646-6b47a023d44a",
+        "manifId": "e3b6c04c-bf04-4f5c-bac5-3a9ddce11239",
+        "newRating": "4"
+    }
+
+# PATCH update member by manif presence
+http://localhost:5283/api/data/updatePresence
+
+    request body: 
+    {
+        "clientId": "30233107-7181-4d93-a646-6b47a023d44a",
+        "manifId": "e3b6c04c-bf04-4f5c-bac5-3a9ddce11239"
+    }

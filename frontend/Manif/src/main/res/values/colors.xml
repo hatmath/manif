@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3D65A8</color>
+    <color name="colorPrimaryDark">#0C1237</color>
+    <color name="colorAccent">#0217A5</color>
+    <color name="colorPrimaryNight">#252525</color>
+    <color name="colorPrimaryDarkNight">#252525</color>
+    <color name="colorAccentNight">#4caf50</color>
+    <color name="iconWhite">#B3B3B3</color>
+    <color name="tabOnWhite">#B3B3B3</color>
+    <color name="tabOnBlack">#979797</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGray">#D3D3D3</color>
+    <color name="colorRed">#f10202</color>
+    <color name="colorViolet">#7d34fb</color>
+    <color name="colorBlue">#5c61eb</color>
+    <color name="colorYellow">#E9EFBE0E</color>
+    <color name="colorGreen">#19D422</color>
+    <color name="colorLiteGray">#CFCFCF</color>
+    <color name="colorPurple">#7D34FB</color>
+    <color name="PersianBlue">#5d1afc</color>
+    <color name="Violet">#7a4afd</color>
+
+</resources>

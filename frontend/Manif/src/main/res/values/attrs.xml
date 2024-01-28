@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <attr name="BlackWhite" format="color">BlackWhite</attr>
+    <attr name="WhiteBlack" format="color">BlackWhite</attr>
+    <attr name="IconBack" format="color">IconBack</attr>
+    <attr name="CBack" format="color">CBack</attr>
+    <attr name="TabColor" format="color">TabColor</attr>
+
+</resources>

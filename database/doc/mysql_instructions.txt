@@ -1,0 +1,22 @@
+### Install node_module in ./database
+    npm install
+
+1 - Install MySQL CLI
+
+2 - Connect as root
+
+3 - In mysql console, run all commands from sql_setup.sql (located in ./database/doc/)
+
+4 - Create folder ./database/env/
+
+5 - Copy environment files from Teams files
+
+6 - Update DB_HOST variable : 
+
+    DB_HOST=192.168.1.99 #TO CHANGE FOR ACTUAL DB IP ADDRESS
+
+    Set to local MySQL address. (Most likely localhost if ran on same PC)
+
+7 - In vscode console, run : 
+    npm run db:deploy
+

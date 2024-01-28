@@ -1,0 +1,56 @@
+Entites V6 (25-janvier-2023)
+    
+interest
+	-id - int, PK
+	-name - string, nonnull
+	-description - string, nonnull
+	-date_created - timestamp, nonnull
+
+member
+	-id - uuid, PK
+    	-username - string, nonnull
+    	-password - string, nonnull
+    	-salt - string, nonnull
+    	-descripition - string
+    	-avatar - int
+    	-mail - string
+    	-phone - int
+    	-last_login - timestamp, nonnull
+    	-date_created - timestamp, nonnull
+    	-last_update - timestamp,nonnull
+
+interest_by_member
+    	-id - incr, PK
+    	-date_created - timestamp, nonnull
+	-interest - REF interest, id
+    	-member - REF member, id
+
+manif
+    	-id - uuid, PK
+    	-name - string, nonnull
+    	-description - string, nonnull
+    	-city - string
+    	-meeting - string
+    	-start_date - timestamp, nonnull
+    	-end_date - timestamp,
+    	-date_created - timestamp, nonnull
+    	-last_update - timestamp,nonnull
+	-interest - REF interest, id
+	-slogan - REF slogan, id
+	-creator - REF member, id
+	
+slogan
+    	-id - uuid, PK
+    	-title - string, nonnull
+    	-slogan - string, nonnullable
+    	-date_created - timestamp, nonnull
+    	-last_update - timestamp,nonnull
+	-interest - REF interest, id
+	
+member_by_manif
+    	-id - int, PK
+	-presence - boolean
+	-rating - int
+	-date_created - timestamp, nonnull
+	-manif - REF manif, id
+    	-member - REF member, id

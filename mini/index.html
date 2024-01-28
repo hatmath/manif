@@ -1,0 +1,50 @@
+<!-- 
+  main html file
+  mini\src\index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="/mini/src/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/mini/src/css/global.css" />
+
+        <link rel="manifest" href="manifest.json" />
+
+        <!-- Include API Variables -->
+        <script src="/mini/src/common/constant/api-config.js"></script>
+
+        <!-- Include API services -->
+        <script src="/mini/src/common/service/apiService.js"></script>
+
+        <!-- Application router -->
+        <script src="/mini/src/scripts/router.js"></script>
+
+        <!-- Include Bootstrap JS -->
+        <script src="/mini/src/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Database CRUD services -->
+        <script src="/mini/src/data/indexedDBService.js"></script>
+
+        <!-- Database Initialization -->
+        <script src="/mini/src/data/_init.js"></script>
+
+        <!-- Main script -->
+        <script src="/mini/src/scripts/main.js"></script>
+
+        <!-- Service Worker Registration -->
+        <script src="/mini/src/scripts/registerSW.js"></script>
+
+        <title>Manif PWA</title>
+    </head>
+
+    <body>
+        <div id="app"></div>
+    </body>
+</html>

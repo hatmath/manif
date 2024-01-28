@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/navigationview"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/MenuItem_CU05"
+            android:title="Consulter manifestations" />
+        <item
+            android:id="@+id/MenuItem_CU04"
+            android:title="Mes manifestations" />
+
+        <item
+            android:id="@+id/MenuItem_CU03"
+            android:title="Mes preferences" />
+
+        <item
+            android:id="@+id/MenuItem_test"
+            android:title="TESTS ET UTILITAIRES (DEV)" />
+        <item
+            android:id="@+id/MenuItem_Deconnecter"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Se deconnecter" />
+    </group>
+
+</menu>

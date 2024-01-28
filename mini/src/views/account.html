@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    
+    <link rel="manifest" href="/mini/manifest.json">
+
+    <script src="/mini/src/scripts/account.js"></script>
+</head>
+
+<body class="body">
+
+    <div class="manif-container">
+        <h1>Account Information</h1>
+
+        <!-- Username -->
+        <div class="manif-input-group">
+            <label for="username" class="manif-label">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <!-- Description -->
+        <div class="manif-input-group">
+            <label for="description" class="manif-label">Description:</label>
+            <input type="text" id="description" name="description">
+        </div>
+
+        <!-- Mail -->
+        <div class="manif-input-group">
+            <label for="mail" class="manif-label">Mail:</label>
+            <input type="email" id="mail" name="mail">
+        </div>
+
+        <!-- Phone -->
+        <div class="manif-input-group">
+            <label for="phone" class="manif-label">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <!-- Date Created -->
+        <div class="manif-input-group">
+            <label for="dateCreated" class="manif-label">Date Created:</label>
+            <input type="text" id="dateCreated" name="dateCreated" readonly>
+        </div>
+
+        <!-- Last Update -->
+        <div class="manif-input-group">
+            <label for="lastUpdate" class="manif-label">Last Update:</label>
+            <input type="text" id="lastUpdate" name="lastUpdate" readonly>
+        </div>
+
+        <!-- Buttons -->
+        <button type="button" class="manif-button" id="saveButton">Save Changes</button>
+        <button type="button" class="manif-button" id="backButton">Back to Main Menu</button>
+    </div>
+
+</body>
+
+</html>

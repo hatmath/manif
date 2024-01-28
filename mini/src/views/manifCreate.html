@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manif Create Page</title>
+    
+    <link rel="manifest" href="/mini/manifest.json">
+
+    
+</head>
+
+<body class="body">
+
+    <div class="container manif-container">
+        <h1>Create Manifestation</h1>
+
+        <!-- Form for Manifestation Creation -->
+        <form id="manifCreateForm" class="manif-form">
+
+            <!-- Name -->
+            <div class="manif-input-group">
+                <label for="manifName" class="manif-label">Name:</label>
+                <input type="text" id="manifName" name="manifName" class="manif-input" required>
+            </div>
+
+            <!-- Description -->
+            <div class="manif-input-group">
+                <label for="manifDescription" class="manif-label">Description:</label>
+                <textarea id="manifDescription" name="manifDescription" class="manif-textarea" rows="4" required></textarea>
+            </div>
+
+            <!-- Slogan -->
+            <div class="manif-input-group">
+                <label for="manifSlogan" class="manif-label">Slogan:</label>
+                <select id="manifSlogan" name="manifSlogan" class="manif-input" required>
+                    <option value="" disabled selected>Select a slogan</option>
+                </select>
+            </div>
+
+            <!-- City -->
+            <div class="manif-input-group">
+                <label for="manifCity" class="manif-label">City:</label>
+                <input type="text" id="manifCity" name="manifCity" class="manif-input" required>
+            </div>
+
+            <!-- Meeting -->
+            <div class="manif-input-group">
+                <label for="manifMeeting" class="manif-label">Meeting:</label>
+                <input type="text" id="manifMeeting" name="manifMeeting" class="manif-input" required>
+            </div>
+
+            <!-- Interest -->
+            <div class="manif-input-group">
+                <label for="manifInterest" class="manif-label">Interest:</label>
+                <select id="manifInterest" name="manifInterest" class="manif-input" required>
+                    <option value="" disabled selected>Select an interest</option>
+                </select>
+            </div>
+
+            <!-- Start Date -->
+            <div class="manif-input-group">
+                <label for="manifStartDate" class="manif-label">Start Date:</label>
+                <input type="datetime-local" id="manifStartDate" name="manifStartDate" class="manif-input" required>
+            </div>
+
+            <!-- End Date -->
+            <div class="manif-input-group">
+                <label for="manifEndDate" class="manif-label">End Date:</label>
+                <input type="datetime-local" id="manifEndDate" name="manifEndDate" class="manif-input" required>
+            </div>
+
+            <!-- Buttons -->
+            <button type="button" id="saveButton" class="manif-button btn btn-primary">Save</button>
+            <button type="button" id="clearButton" class="manif-button btn btn-secondary">Clear</button>
+            <button type="button" id="returnToManifButton" class="manif-button btn btn-secondary">Return to Manif</button>
+
+        </form>
+    </div>
+
+    <script src="/mini/src/scripts/manifCreate.js"></script>
+    
+</body>
+
+</html>

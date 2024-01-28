@@ -1,0 +1,62 @@
+CAS D’UTILISATION
+
+CU01 – INSCRIPTION = POST /auth/register
+L’interface du système permet à une personne d’ouvrir un compte régulier
+
+CU02 – OVERTURE DE SESSION = POST /auth/login
+Le système permet aux utilisateurs de se connecter.
+ 
+CU03 – PERSONNALISATION DES INTÉRÊTS SOCIAUX = UPDATE /data/updateInterest + UPDATE /data/updateInterestList
+Le système permet de personnaliser les intérêts de l’utilisateur. Un utilisateur régulier
+pourra ajouter des intérêts à la liste par défaut.
+
+CU04 – ORGANISATION DE MANIFESTATIONS = POST /data/createManif
+Le système permet de créer à un utilisateur régulier de créer une manifestation.
+
+CU05 – CRÉATION ET PARTAGE DE SLOGANS = POST /data/createSlogan
+Le système permet de créer un slogan textuel. Celui-ci peut être ensuite ajouter dans une
+manif spécifique et/ou partagé globalement.
+
+CU06 – RÉCEPTION D'ALERTES
+Le système permet d’envoyer des alertes aux utilisateurs connectés, inscrits pour une
+manifestation selon et la configuration d’alerte qu’il a défini.
+Des alertes peuvent aussi être envoyé aux utilisateurs connectés, non inscrit à une
+manifestation selon les préférences d’intérêts et la configuration d’alerte qu’il a défini.
+
+CU07 – CONFIGURATION D'ALERTES 
+Le système permet de configurer si oui ou non on veut recevoir des alertes une fois
+connecté. Si on active les alertes, on pourra aussi définir le contexte, les conditions.
+
+CU08 – AJOUTER DES INFORMATIONS DE PROFIL = PATCH /data/updateMember
+En plus des intérêts, un utilisateur aura un profil qu’il pourra renseigner quand bon lui
+semble après son inscription.
+
+CU09 – AJOUTER SA PRÉSENCE À UNE MANIF = POST /data/updatePresence
+L’utilisateur qui assiste à une manifestation pourra informer la manif de sa présence sur
+les lieux manuellement.
+'
+CU10 – VISUALISER LES MANIFESTANTS PRÉSENTS = GET /data/manifMember
+À partir d’une manifestions,
+
+EXTRA routes: 
+
+get manif from GET /data/viewManif
+
+BACKEND OVERVIEW RECAP
+
+Database = contains Data
+
+Backend Service => Interact with DB and manage transactions.
+    Input : Service query with parameters
+    Returns : Data
+    Shape : JSON object
+
+Backend Functions => Interact with services and validate queries with business logic
+    Input : Request body from handlers
+    Returns : Success flags and Data
+    Shape : JSON Object
+
+Backend Handlers => Receive Endpoints Query and validate query content
+    Input : 
+    Returns : HTTP code, JSON object with data
+    Shape : JSON Object

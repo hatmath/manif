@@ -1,0 +1,27 @@
+
+
+
+<resources>
+
+<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="BlackWhite">@color/colorBlack</item>
+    <item name="WhiteBlack">@color/colorWhite</item>
+    <item name="materialButtonStyle">@style/Button</item>
+    <item name="IconBack">@color/iconWhite</item>
+    <item name="TabColor">@color/tabOnWhite</item>
+    <item name="CBack">#EDEDED</item>
+
+</style>
+
+<style name="Button" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="android:textColor">?colorAccent</item>
+</style>
+
+
+
+
+</resources>

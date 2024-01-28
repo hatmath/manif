@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="#C2D7EF">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C2D7EF"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/CheckBox_Interet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/TextView_Title"
+                        android:layout_width="322dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Interet"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton_Interet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"     />
+
+
+                </LinearLayout>
+
+
+</LinearLayout>

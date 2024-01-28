@@ -1,0 +1,43 @@
+<!--
+  Welcome page
+  mini\src\views\welcome.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome</title>
+
+    <link rel="manifest" href="/mini/manifest.json">
+
+    <script src="/mini/src/scripts/welcome.js"></script>
+
+</head>
+
+<body class="body">
+
+    <div class="container">
+        <h1>Manif</h1>
+        <p>Be heard</p>
+
+        <div class="btn-container">
+            <a href="#" class="btn btn-primary" id="loginButton">Login</a>
+            <a href="#" class="btn btn-secondary" id="registerButton">Register</a>
+            <a href="#" class="btn btn-primary" id="installButton">Install</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('dynamicContentLoaded', function () {
+            console.log('Welcome.js file is executing.');
+            // Event listeners and other script content here
+        });
+    </script>
+
+</body>
+
+</html>

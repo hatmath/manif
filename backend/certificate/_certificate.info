@@ -1,0 +1,21 @@
+Create Certificate
+
+1 - install mkcert:
+    npm install -g mkcert
+
+2 - (optional) allow script execution in powershell:
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+3 - create/go to certificate folder:
+    mkdir backend\certificate
+    cd backend\certificate
+
+4 - install local CA certificate
+    mkcert create-ca
+
+5 - generate key and certificate pair:
+    mkcert create-cert --ca-key ca.key --ca-cert ca.crt --key ca-key.pem --cert ca-cert.pem localhost 127.0.0.1
+
+6 - (optional) reinstate script execution block: 
+    Set-ExecutionPolicy Restricted -Scope CurrentUser
+
