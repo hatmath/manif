@@ -34,4 +34,4 @@ backend/certificate/ca.crt
 backend/certificate/ca.key
 
 # miniApp
-mini\node_modules
+mini/node_modules
